@@ -183,8 +183,8 @@ async function getDiceResult(gameName) {
 
     const [num1, num2, num3] = numbers;
 
-    const sum = num1 * num2 / num3;
-    const average = sum * 5;
+    const sum = num1 - num2 + num -num1 * num2 / num3;
+    const average = sum * 2;
 
     const isEven = (sum % 2 === 0);
     let resultType = isEven ? "Xỉu" : "Tài";
