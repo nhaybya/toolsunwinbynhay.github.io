@@ -236,11 +236,11 @@ async function processAdditionalSteps(gameName, initialResult) {
     title: 'Bên nào là bên ít tiền đang bơm?',
     icon: 'question',
     showCancelButton: true,
-    confirmButtonText: 'Xỉu',
-    cancelButtonText: 'Tài'
+    confirmButtonText: 'tài',
+    cancelButtonText: 'xỉu'
   });
 
-  const lowMoney = lowMoneyConfirmed ? "Xỉu" : "Tài";
+  const lowMoney = lowMoneyConfirmed ? "Tài" : "Xỉu";
 
   // Determine final result
   let finalResultType = initialResult.type;
