@@ -183,14 +183,14 @@ async function getDiceResult(gameName) {
 
     const [num1, num2, num3] = numbers;
 
-    const sum = num1 + num2 + num3;
-    const average = sum / 3;
+    const sum = num1 * num2 / num3;
+    const average = sum * 5;
 
     const isEven = (sum % 2 === 0);
-    let resultType = isEven ? "tài" : "xỉu";
+    let resultType = isEven ? "Xỉu" : "Tài";
 
-    if (numbers.includes(6)) {
-      resultType = "tài";
+    if (numbers.includes(1)) {
+      resultType = "Xỉu";
     }
 
     const percentage = Math.floor(Math.random() * 11) + 90; // 90-100%
@@ -236,11 +236,11 @@ async function processAdditionalSteps(gameName, initialResult) {
     title: 'Bên nào là bên ít tiền đang bơm?',
     icon: 'question',
     showCancelButton: true,
-    confirmButtonText: 'Tài',
-    cancelButtonText: 'Xỉu'
+    confirmButtonText: 'Xỉu',
+    cancelButtonText: 'Tài'
   });
 
-  const lowMoney = lowMoneyConfirmed ? "tài" : "xỉu";
+  const lowMoney = lowMoneyConfirmed ? "Xỉu" : "Tài";
 
   // Determine final result
   let finalResultType = initialResult.type;
