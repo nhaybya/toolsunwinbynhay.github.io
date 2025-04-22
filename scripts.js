@@ -1,6 +1,6 @@
 // JavaScript Code
 
-let password = "Nhayydzvcl";
+let password = "Nhay";
 let attemptCount = 0;
 let capital = 0;
 let currentGame = "Sun.win 🤖"; // Only one game available
