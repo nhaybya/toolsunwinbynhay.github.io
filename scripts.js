@@ -183,7 +183,7 @@ async function getDiceResult(gameName) {
 
     const [num1, num2, num3] = numbers;
 
-    const sum = num1 - num2 + num -num1 * num2 / num3;
+    const sum = num2 * num3 / num1;
     const average = sum * 2;
 
     const isEven = (sum % 2 === 0);
